@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: orders-service
+server:
+  servlet:
+    contextPath: /orders-service/api
+  error:
+    include-stacktrace: never
