@@ -3,6 +3,6 @@ spring:
     name: orders-service
 server:
   servlet:
-    contextPath: /orders-service/api
+    contextPath: /api
   error:
     include-stacktrace: never
