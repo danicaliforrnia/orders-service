@@ -1,6 +1,6 @@
 spring:
   application:
-    name: local-orders-service
+    name: orders-service
   data:
     mongodb:
       uri: mongodb://localhost:27017/orders

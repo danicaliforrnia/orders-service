@@ -1,31 +1,21 @@
-package com.imagina.ordersservice.entities;
+package com.imagina.ordersservice.dto;
 
+import com.imagina.ordersservice.entities.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.List;
 
-@Document(collection = "orders")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order {
-    @Id
+public class ReadOrderDto {
     private String id;
-
-    @Field("first_name")
     private String userFirstName;
-
-    @Field("last_name")
     private String userLastName;
-
-    @Field("address")
     private String address;
-
-    @Field("items")
     private List<OrderItem> orderItems;
 }
