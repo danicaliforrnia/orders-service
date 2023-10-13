@@ -1,8 +1,16 @@
 spring:
   application:
     name: orders-service
+info:
+  app:
+    name: Orders Service
+    description: API for orders management
 server:
   servlet:
     contextPath: /api
   error:
     include-stacktrace: never
+eureka:
+  instance:
+    statusPageUrlPath: ${server.servlet.contextPath}/actuator/info
+    healthCheckUrlPath: ${server.servlet.contextPath}/actuator/health
